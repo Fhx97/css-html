@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 选择器{样式} */
+    /* 标签选择器：用html标签作为选择器 */
+    p {
+      color: rgb(174, 0, 255);
+      /* 修改文字大小 */
+      font-size: 24px;
+    }
+
+    /* 类选择器：单独选择一个或者某几个标签 
+       样式点定义 结构类（class）调用 一个或多个 开发最常用
+       可以多个类名一起调用 但每个类名需要用空格分开 */
+    .red {
+      color: rgb(0, 200, 255);
+    }
+
+    .fhx {
+      width: 100px;
+      height: 100px;
+      /* 背景颜色 */
+      background-color: red;
+    }
+
+    .hx {
+      width: 100px;
+      height: 100px;
+      /* 背景颜色 */
+      background-color: green;
+    }
+
+    /* id选择器 HTML元素以id属性来设置id选择器 CSS中id选择器以"#"来定义 
+       样式#定义 结构id调用 只能调用一次 别人切勿使用*/
+    #pink {
+      color: pink;
+    }
+
+    /* 通配符选择器，用"*"定义，表示选取页面中所有元素（标签） */
+    * {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <p>明天要去看升国旗！</p>
+  <div>男生</div>
+  <div id="pink">女生</div>
+  <ul>
+    <li class="red">丰</li>
+    <li>小</li>
+    <li>帅</li>
+    <li>真</li>
+    <li>棒</li>
+  </ul>
+
+  <div class="fhx"></div>
+  <div class="hx"></div>
+  <div class="fhx"></div>
+</body>
+
+</html>
