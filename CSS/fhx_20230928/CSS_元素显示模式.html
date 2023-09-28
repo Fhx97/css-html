@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    input {
+      width: 249px;
+      height: 35px;
+    }
+
+    a {
+      width: 150px;
+      height: 50px;
+      background-color: rgb(0, 110, 255);
+      /* 把行内元素a 转换为 块级元素 */
+      display: block;
+    }
+
+    div {
+      width: 300px;
+      height: 100px;
+      background-color: rgb(0, 183, 255);
+      /* 把块级元素转换为行内元素 */
+      display: inline;
+    }
+
+    span {
+      width: 500px;
+      height: 500px;
+      /* 把行内元素转换为行内块元素 */
+      background-color: rgb(0, 157, 255);
+      display: inline-block;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 常见的块元素有 <h1>-<h6>,<p>,<div>,<ul>,<ol>,<li> -->
+  <!-- 块元素的特点：独占一行，高度、宽度、外边距及内边距都可以控制，宽度默认容器的100%，是一个容器（盒子），可以放行内或者块级元素。 -->
+  <!-- 文字类元素不能放块元素 比如<p></p>不能放<div></div>  -->
+
+  <!-- 行内元素：<a> <strong></strong> <b></b> <em></em> <i></i> <del></del> <s></s> <ins></ins> <u></u> <span></span> -->
+  <!-- 其中<span></span>是最典型的行内元素，有的也称内联元素。 -->
+  <!-- 一行可以放多个，高、框设置无效，默认宽度是本身内容的宽度，行业元素只能存放文本或者其他行内元素。 -->
+
+  <!-- 行内块元素 <img />、<inut/>、<td> 同时具有块元素和行内元素的特点 -->
+  <input type="button">
+  <input type="button">
+
+  <!-- 元素显示模式转换 -->
+  <a href="http://www.baidu.com" target="_blank">百度</a>
+  <div>丰小帅加油啊！</div>
+  <span>国庆中秋双节快乐！</span>
+</body>
+
+</html>

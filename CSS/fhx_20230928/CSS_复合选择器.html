@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 后代选择器:元素1 元素2{样式声明} */
+    /* ol li {
+      color: rgb(0, 106, 255);
+    } */
+
+    /* 子选择器：只能选择最近一级的元素 元素1 > 元素2 {样式声明} */
+
+    /* .nav a {
+      color: red;
+    } */
+
+    /* 并选择器 */
+    /* div,
+    p,
+    .pig li {
+      color: rgb(0, 64, 255);
+    } */
+
+    /* 伪类选择器：用于向某些选择器添加特殊的效果，比如给链接添加特殊效果，或选择第一个，第n个元素 */
+    /* 伪类选择器最大的特点是用冒号（:）表示，比如:hover、:first-child */
+    /* 以下四种顺序，不能颠倒 LVHA */
+    a:link {
+      color: #333;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: orange;
+    }
+
+    a:hover {
+      color: skyblue;
+    }
+
+    a:active {
+      color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <ol>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+  </ol>
+  <ul>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+  </ul>
+  <div class="nav">
+    <ul>
+      <li><a href="#">百度</a></li>
+      <li><a href="#">百度</a></li>
+    </ul>
+  </div>
+  <div>熊大</div>
+  <p>熊二</p>
+  <span>光头强</span>
+  <ul class="pig">
+    <li><a href="https://www.mgtv.com/b/8427/18149072.html?cxid=95kqkw8n6" target="_blank">小猪佩奇</a></li>
+    <li><a href="https://www.tencent.com" target="_blank">猪爸爸</li>
+    <li>猪妈妈</li>
+  </ul>
+</body>
+
+</html>
